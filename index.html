@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="app">
-        <h1>Quiz!!!</h1>
-        <div class="quiz">
-            <h2 id="question">Question goes here</h2>
-            <div id="answer">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-            <button id="skip-btn">Skip</button>
-            <button id="next-btn">Next</button>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">My<span>Portfolio</span></div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Hi, I'm <span>Your Name</span></h1>
+    <p>Frontend Developer | UI/UX Enthusiast | Creative Coder</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m a web developer with a passion for creating beautiful and functional user experiences. I specialize in HTML, CSS, JavaScript, and modern frameworks.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A clean, modern personal portfolio site to showcase my work and skills.</p>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Built with JavaScript and API integration to show live weather data.</p>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email or connect with me on LinkedIn!</p>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
